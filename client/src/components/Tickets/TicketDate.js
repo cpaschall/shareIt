@@ -1,6 +1,6 @@
 import "./TicketDate.css"
 
-function TicketDate(props) {
+const TicketDate = (props) => {
     
     const month = props.date.toLocaleString('en-US', { month: 'long' });
     const day = props.date.toLocaleString('en-US', { day: '2-digit' });
