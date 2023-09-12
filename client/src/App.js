@@ -43,11 +43,17 @@ const App = () => {
       ticket: "459234",
       tier: "5",
     },
-  ]
+  ];
+
+  const addTicketHandler = ticket => {
+    console.log("in App.js")
+    console.log(ticket)
+  }
+
   return (
     <div>
       <Header />
-      <NewTicket />
+      <NewTicket onAddTicket={addTicketHandler} />
       <Tickets tickets={tickets} />
       {/* <TicketItem 
       date={new Date(2023, 7, 21)} 
